@@ -19,7 +19,7 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "dhsheuhe" #Must be unique in Heroku
+          heroku_app_name: "sheltered-mesa-73291" #Must be unique in Heroku
           heroku_email: "trory99@loving.ourhobby.com"
           branch: "master"
           usedocker: "true"
