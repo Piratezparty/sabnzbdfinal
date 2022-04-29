@@ -81,10 +81,5 @@ RUN \
     /tmp/* \
     $HOME/.cache
 
-# add local files
-
-
-# ports and volumes
-EXPOSE $PORT
-VOLUME /config
+RUN python3 /app/sabnzbd/SABnzbd.py --config-file /config --server 0.0.0.0:$PORT
 
