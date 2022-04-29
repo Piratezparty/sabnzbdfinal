@@ -5,7 +5,4 @@ mkdir -p \
     /downloads \
     /incomplete-downloads
 
-# permissions
-chown abc:abc \
-    /downloads \
-    /incomplete-downloads
+
