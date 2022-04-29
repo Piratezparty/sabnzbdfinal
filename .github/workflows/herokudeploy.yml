@@ -2,7 +2,7 @@ name: Deploy
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -14,5 +14,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "sheltered-mesa-73291" #Must be unique in Heroku
           heroku_email: "trory99@loving.ourhobby.com"
-          branch: "master"
+          branch: "main"
           usedocker: "true"
