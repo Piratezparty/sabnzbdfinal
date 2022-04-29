@@ -5,7 +5,7 @@ FAMILY=::
 if [ "$HAS_IPV6" = "false" ]; then
     FAMILY='0.0.0.0:$PORT'
 fi
-
+curl -s $SAB_URL -o /config/sabnzbd.ini
 exec \
     s6-setuidgid 1000 python3 /app/sabnzbd/SABnzbd.py \
-    --config-file /config --server "$FAMILY"
+    --config-file /config 
