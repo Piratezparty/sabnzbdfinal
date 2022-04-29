@@ -1,8 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-# make folders
-mkdir -p \
-    /downloads \
-    /incomplete-downloads
-
-
