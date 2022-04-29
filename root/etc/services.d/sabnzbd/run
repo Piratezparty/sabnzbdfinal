@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bash
+
+FAMILY=::
+
+if [ "$HAS_IPV6" = "false" ]; then
+    FAMILY=0.0.0.0:$PORT
+fi
+
+exec \
+    s6-setuidgid 1000 python3 /app/sabnzbd/SABnzbd.py \
+    --config-file /config --server "$FAMILY"
