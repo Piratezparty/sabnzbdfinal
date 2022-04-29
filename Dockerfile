@@ -82,7 +82,7 @@ RUN \
     $HOME/.cache
 
 # add local files
-COPY root/ /
+
 
 # ports and volumes
 EXPOSE $PORT
