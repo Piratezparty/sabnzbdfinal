@@ -81,6 +81,6 @@ RUN \
     /tmp/* \
     $HOME/.cache
     
- RUN pip install gunicorn
+ RUN pip install gunicorn popen
 
 
