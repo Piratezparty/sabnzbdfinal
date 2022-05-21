@@ -80,5 +80,7 @@ RUN \
   rm -rf \
     /tmp/* \
     $HOME/.cache
+    
+ RUN pip install gunicorn
 
 
